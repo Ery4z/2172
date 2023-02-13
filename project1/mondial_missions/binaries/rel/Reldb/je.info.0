@@ -1,0 +1,196 @@
+2023-02-12 13:08:37.625 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Loaded missing expiration data from file 0x0
+2023-02-12 13:09:09.052 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=1 dbId=48 dbName=relvar_206
+2023-02-12 13:09:09.052 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=1 scanned=0 dbId=48 dbName=relvar_206
+2023-02-12 13:09:09.054 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=2 dbId=49 dbName=relvar_207
+2023-02-12 13:09:09.054 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=2 scanned=0 dbId=49 dbName=relvar_207
+2023-02-12 13:09:09.055 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=3 dbId=46 dbName=relvar_204
+2023-02-12 13:09:09.055 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=3 scanned=0 dbId=46 dbName=relvar_204
+2023-02-12 13:09:09.056 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=4 dbId=47 dbName=relvar_205
+2023-02-12 13:09:09.056 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=4 scanned=0 dbId=47 dbName=relvar_205
+2023-02-12 13:14:22.586 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=5 dbId=50 dbName=relvar_208
+2023-02-12 13:14:22.588 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=5 scanned=0 dbId=50 dbName=relvar_208
+2023-02-12 13:14:22.589 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=6 dbId=51 dbName=relvar_209
+2023-02-12 13:14:22.591 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=6 scanned=0 dbId=51 dbName=relvar_209
+2023-02-12 13:21:57.208 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=7 dbId=52 dbName=relvar_252
+2023-02-12 13:21:57.210 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=7 scanned=0 dbId=52 dbName=relvar_252
+2023-02-12 13:21:57.211 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=8 dbId=53 dbName=relvar_253
+2023-02-12 13:21:57.216 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=8 scanned=0 dbId=53 dbName=relvar_253
+2023-02-12 13:22:39.607 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=9 dbId=54 dbName=relvar_254
+2023-02-12 13:22:39.607 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=9 scanned=0 dbId=54 dbName=relvar_254
+2023-02-12 13:22:39.607 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=10 dbId=55 dbName=relvar_255
+2023-02-12 13:22:39.611 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=10 scanned=0 dbId=55 dbName=relvar_255
+2023-02-12 13:25:59.169 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=11 dbId=56 dbName=relvar_256
+2023-02-12 13:25:59.169 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=11 scanned=0 dbId=56 dbName=relvar_256
+2023-02-12 13:25:59.170 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=12 dbId=57 dbName=relvar_257
+2023-02-12 13:25:59.171 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=12 scanned=0 dbId=57 dbName=relvar_257
+2023-02-12 13:26:28.462 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=13 dbId=58 dbName=relvar_258
+2023-02-12 13:26:28.462 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=13 scanned=0 dbId=58 dbName=relvar_258
+2023-02-12 13:26:28.463 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=14 dbId=59 dbName=relvar_259
+2023-02-12 13:26:28.464 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=14 scanned=0 dbId=59 dbName=relvar_259
+2023-02-12 13:30:20.398 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=15 dbId=60 dbName=relvar_260
+2023-02-12 13:30:20.399 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=15 scanned=0 dbId=60 dbName=relvar_260
+2023-02-12 13:30:20.399 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=16 dbId=61 dbName=relvar_261
+2023-02-12 13:30:20.400 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=16 scanned=0 dbId=61 dbName=relvar_261
+2023-02-12 13:42:47.278 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=17 dbId=62 dbName=relvar_262
+2023-02-12 13:42:47.279 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=17 scanned=0 dbId=62 dbName=relvar_262
+2023-02-12 13:42:47.280 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=18 dbId=63 dbName=relvar_263
+2023-02-12 13:42:47.281 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=18 scanned=0 dbId=63 dbName=relvar_263
+2023-02-12 13:42:51.100 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=19 dbId=68 dbName=relvar_268
+2023-02-12 13:42:51.100 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=19 scanned=0 dbId=68 dbName=relvar_268
+2023-02-12 13:42:51.101 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=20 dbId=69 dbName=relvar_269
+2023-02-12 13:42:51.101 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=20 scanned=0 dbId=69 dbName=relvar_269
+2023-02-12 13:42:51.102 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=21 dbId=66 dbName=relvar_266
+2023-02-12 13:42:51.102 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=21 scanned=0 dbId=66 dbName=relvar_266
+2023-02-12 13:42:51.102 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=22 dbId=67 dbName=relvar_267
+2023-02-12 13:42:51.103 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=22 scanned=0 dbId=67 dbName=relvar_267
+2023-02-12 13:42:51.103 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=23 dbId=64 dbName=relvar_264
+2023-02-12 13:42:51.103 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=23 scanned=0 dbId=64 dbName=relvar_264
+2023-02-12 13:42:51.103 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=24 dbId=65 dbName=relvar_265
+2023-02-12 13:42:51.103 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=24 scanned=0 dbId=65 dbName=relvar_265
+2023-02-12 13:44:28.657 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=25 dbId=70 dbName=relvar_270
+2023-02-12 13:44:28.657 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=25 scanned=0 dbId=70 dbName=relvar_270
+2023-02-12 13:44:28.657 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=26 dbId=71 dbName=relvar_271
+2023-02-12 13:44:28.659 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=26 scanned=0 dbId=71 dbName=relvar_271
+2023-02-12 13:45:27.242 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=27 dbId=72 dbName=relvar_272
+2023-02-12 13:45:27.242 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=27 scanned=0 dbId=72 dbName=relvar_272
+2023-02-12 13:45:27.242 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=28 dbId=73 dbName=relvar_273
+2023-02-12 13:45:27.243 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=28 scanned=0 dbId=73 dbName=relvar_273
+2023-02-12 13:45:27.244 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=29 dbId=74 dbName=relvar_274
+2023-02-12 13:45:27.244 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=29 scanned=0 dbId=74 dbName=relvar_274
+2023-02-12 13:45:27.244 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=30 dbId=75 dbName=relvar_275
+2023-02-12 13:45:27.244 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=30 scanned=0 dbId=75 dbName=relvar_275
+2023-02-12 13:46:43.569 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=31 dbId=80 dbName=relvar_280
+2023-02-12 13:46:43.569 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=31 scanned=0 dbId=80 dbName=relvar_280
+2023-02-12 13:46:43.569 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=32 dbId=81 dbName=relvar_281
+2023-02-12 13:46:43.570 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=32 scanned=0 dbId=81 dbName=relvar_281
+2023-02-12 13:46:44.829 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=33 dbId=76 dbName=relvar_276
+2023-02-12 13:46:44.829 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=33 scanned=0 dbId=76 dbName=relvar_276
+2023-02-12 13:46:44.830 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=34 dbId=77 dbName=relvar_277
+2023-02-12 13:46:44.830 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=34 scanned=0 dbId=77 dbName=relvar_277
+2023-02-12 13:46:44.831 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=35 dbId=78 dbName=relvar_278
+2023-02-12 13:46:44.831 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=35 scanned=0 dbId=78 dbName=relvar_278
+2023-02-12 13:46:44.831 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=36 dbId=79 dbName=relvar_279
+2023-02-12 13:46:44.831 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=36 scanned=0 dbId=79 dbName=relvar_279
+2023-02-12 13:46:44.831 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=37 dbId=82 dbName=relvar_282
+2023-02-12 13:46:44.831 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=37 scanned=0 dbId=82 dbName=relvar_282
+2023-02-12 13:46:44.832 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=38 dbId=83 dbName=relvar_283
+2023-02-12 13:46:44.832 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=38 scanned=0 dbId=83 dbName=relvar_283
+2023-02-12 13:47:59.964 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=39 dbId=88 dbName=relvar_288
+2023-02-12 13:47:59.964 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=39 scanned=0 dbId=88 dbName=relvar_288
+2023-02-12 13:47:59.965 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=40 dbId=89 dbName=relvar_289
+2023-02-12 13:47:59.965 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=40 scanned=0 dbId=89 dbName=relvar_289
+2023-02-12 13:48:01.246 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=41 dbId=84 dbName=relvar_284
+2023-02-12 13:48:01.246 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=41 scanned=0 dbId=84 dbName=relvar_284
+2023-02-12 13:48:01.247 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=42 dbId=85 dbName=relvar_285
+2023-02-12 13:48:01.247 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=42 scanned=0 dbId=85 dbName=relvar_285
+2023-02-12 13:48:01.248 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=43 dbId=86 dbName=relvar_286
+2023-02-12 13:48:01.248 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=43 scanned=0 dbId=86 dbName=relvar_286
+2023-02-12 13:48:01.248 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=44 dbId=87 dbName=relvar_287
+2023-02-12 13:48:01.248 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=44 scanned=0 dbId=87 dbName=relvar_287
+2023-02-12 13:48:01.249 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=45 dbId=90 dbName=relvar_290
+2023-02-12 13:48:01.249 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=45 scanned=0 dbId=90 dbName=relvar_290
+2023-02-12 13:48:01.249 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=46 dbId=91 dbName=relvar_291
+2023-02-12 13:48:01.249 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=46 scanned=0 dbId=91 dbName=relvar_291
+2023-02-12 13:48:24.293 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=47 dbId=92 dbName=relvar_292
+2023-02-12 13:48:24.293 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=47 scanned=0 dbId=92 dbName=relvar_292
+2023-02-12 13:48:24.294 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=48 dbId=93 dbName=relvar_293
+2023-02-12 13:48:24.294 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=48 scanned=0 dbId=93 dbName=relvar_293
+2023-02-12 13:48:24.295 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=49 dbId=94 dbName=relvar_294
+2023-02-12 13:48:24.295 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=49 scanned=0 dbId=94 dbName=relvar_294
+2023-02-12 13:48:24.295 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=50 dbId=95 dbName=relvar_295
+2023-02-12 13:48:24.295 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=50 scanned=0 dbId=95 dbName=relvar_295
+2023-02-12 13:49:04.465 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=51 dbId=98 dbName=relvar_298
+2023-02-12 13:49:04.465 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=51 scanned=0 dbId=98 dbName=relvar_298
+2023-02-12 13:49:04.466 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=52 dbId=99 dbName=relvar_299
+2023-02-12 13:49:04.466 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=52 scanned=0 dbId=99 dbName=relvar_299
+2023-02-12 13:49:07.587 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=53 dbId=96 dbName=relvar_296
+2023-02-12 13:49:07.587 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=53 scanned=0 dbId=96 dbName=relvar_296
+2023-02-12 13:49:07.587 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=54 dbId=97 dbName=relvar_297
+2023-02-12 13:49:07.588 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=54 scanned=0 dbId=97 dbName=relvar_297
+2023-02-12 13:49:07.588 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=55 dbId=102 dbName=relvar_302
+2023-02-12 13:49:07.588 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=55 scanned=0 dbId=102 dbName=relvar_302
+2023-02-12 13:49:07.589 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=56 dbId=103 dbName=relvar_303
+2023-02-12 13:49:07.589 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=56 scanned=0 dbId=103 dbName=relvar_303
+2023-02-12 13:49:07.589 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=57 dbId=100 dbName=relvar_300
+2023-02-12 13:49:07.589 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=57 scanned=0 dbId=100 dbName=relvar_300
+2023-02-12 13:49:07.589 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=58 dbId=101 dbName=relvar_301
+2023-02-12 13:49:07.590 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=58 scanned=0 dbId=101 dbName=relvar_301
+2023-02-12 13:49:18.977 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=59 dbId=104 dbName=relvar_304
+2023-02-12 13:49:18.978 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=59 scanned=0 dbId=104 dbName=relvar_304
+2023-02-12 13:49:18.978 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=60 dbId=105 dbName=relvar_305
+2023-02-12 13:49:18.978 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=60 scanned=0 dbId=105 dbName=relvar_305
+2023-02-12 13:49:18.979 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=61 dbId=106 dbName=relvar_306
+2023-02-12 13:49:18.979 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=61 scanned=0 dbId=106 dbName=relvar_306
+2023-02-12 13:49:18.979 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=62 dbId=107 dbName=relvar_307
+2023-02-12 13:49:18.979 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=62 scanned=0 dbId=107 dbName=relvar_307
+2023-02-12 13:50:52.789 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=63 dbId=110 dbName=relvar_310
+2023-02-12 13:50:52.790 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=63 scanned=0 dbId=110 dbName=relvar_310
+2023-02-12 13:50:52.790 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=64 dbId=111 dbName=relvar_311
+2023-02-12 13:50:52.791 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=64 scanned=0 dbId=111 dbName=relvar_311
+2023-02-12 13:50:55.869 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=65 dbId=108 dbName=relvar_308
+2023-02-12 13:50:55.869 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=65 scanned=0 dbId=108 dbName=relvar_308
+2023-02-12 13:50:55.871 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=66 dbId=109 dbName=relvar_309
+2023-02-12 13:50:55.872 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=66 scanned=0 dbId=109 dbName=relvar_309
+2023-02-12 13:50:55.872 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=67 dbId=114 dbName=relvar_314
+2023-02-12 13:50:55.872 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=67 scanned=0 dbId=114 dbName=relvar_314
+2023-02-12 13:50:55.873 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=68 dbId=115 dbName=relvar_315
+2023-02-12 13:50:55.873 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=68 scanned=0 dbId=115 dbName=relvar_315
+2023-02-12 13:50:55.873 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=69 dbId=112 dbName=relvar_312
+2023-02-12 13:50:55.873 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=69 scanned=0 dbId=112 dbName=relvar_312
+2023-02-12 13:50:55.873 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=70 dbId=113 dbName=relvar_313
+2023-02-12 13:50:55.873 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=70 scanned=0 dbId=113 dbName=relvar_313
+2023-02-12 15:04:10.244 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=71 dbId=116 dbName=relvar_316
+2023-02-12 15:04:10.244 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=71 scanned=0 dbId=116 dbName=relvar_316
+2023-02-12 15:04:10.245 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=72 dbId=117 dbName=relvar_317
+2023-02-12 15:04:10.245 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=72 scanned=0 dbId=117 dbName=relvar_317
+2023-02-12 15:04:14.026 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=73 dbId=122 dbName=relvar_322
+2023-02-12 15:04:14.026 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=73 scanned=0 dbId=122 dbName=relvar_322
+2023-02-12 15:04:14.026 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=74 dbId=123 dbName=relvar_323
+2023-02-12 15:04:14.026 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=74 scanned=0 dbId=123 dbName=relvar_323
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=75 dbId=120 dbName=relvar_320
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=75 scanned=0 dbId=120 dbName=relvar_320
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=76 dbId=121 dbName=relvar_321
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=76 scanned=0 dbId=121 dbName=relvar_321
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=77 dbId=118 dbName=relvar_318
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=77 scanned=0 dbId=118 dbName=relvar_318
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=78 dbId=119 dbName=relvar_319
+2023-02-12 15:04:14.027 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=78 scanned=0 dbId=119 dbName=relvar_319
+2023-02-12 15:11:23.883 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=79 dbId=124 dbName=relvar_324
+2023-02-12 15:11:23.883 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=79 scanned=0 dbId=124 dbName=relvar_324
+2023-02-12 15:11:23.884 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=80 dbId=125 dbName=relvar_325
+2023-02-12 15:11:23.884 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=80 scanned=0 dbId=125 dbName=relvar_325
+2023-02-12 15:11:27.319 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=81 dbId=130 dbName=relvar_330
+2023-02-12 15:11:27.319 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=81 scanned=0 dbId=130 dbName=relvar_330
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=82 dbId=131 dbName=relvar_331
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=82 scanned=0 dbId=131 dbName=relvar_331
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=83 dbId=128 dbName=relvar_328
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=83 scanned=0 dbId=128 dbName=relvar_328
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=84 dbId=129 dbName=relvar_329
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=84 scanned=0 dbId=129 dbName=relvar_329
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=85 dbId=126 dbName=relvar_326
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=85 scanned=0 dbId=126 dbName=relvar_326
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=86 dbId=127 dbName=relvar_327
+2023-02-12 15:11:27.320 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=86 scanned=0 dbId=127 dbName=relvar_327
+2023-02-12 15:12:09.542 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=87 dbId=132 dbName=relvar_332
+2023-02-12 15:12:09.542 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=87 scanned=0 dbId=132 dbName=relvar_332
+2023-02-12 15:12:09.543 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=88 dbId=133 dbName=relvar_333
+2023-02-12 15:12:09.543 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=88 scanned=0 dbId=133 dbName=relvar_333
+2023-02-12 15:12:12.899 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=89 dbId=138 dbName=relvar_338
+2023-02-12 15:12:12.900 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=89 scanned=0 dbId=138 dbName=relvar_338
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=90 dbId=139 dbName=relvar_339
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=90 scanned=0 dbId=139 dbName=relvar_339
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=91 dbId=136 dbName=relvar_336
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=91 scanned=0 dbId=136 dbName=relvar_336
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=92 dbId=137 dbName=relvar_337
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=92 scanned=0 dbId=137 dbName=relvar_337
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=93 dbId=134 dbName=relvar_334
+2023-02-12 15:12:12.902 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=93 scanned=0 dbId=134 dbName=relvar_334
+2023-02-12 15:12:12.903 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] Start DB remove/truncate scan, id=94 dbId=135 dbName=relvar_335
+2023-02-12 15:12:12.903 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] End DB remove/truncate scan, id=94 scanned=0 dbId=135 dbName=relvar_335
+2023-02-12 16:04:57.074 UTC SEVERE [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb] /home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb:FileDeletionDetector exited unexpectedly with exception java.io.IOException: Directory /home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb does not exist now. Something abnormal may happen.java.io.IOException: Directory /home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb does not exist now. Something abnormal may happen.
+	at com.sleepycat.je.log.FileDeletionDetector.processLogFileDeleteEvents(FileDeletionDetector.java:248)
+	at com.sleepycat.je.log.FileDeletionDetector.access$100(FileDeletionDetector.java:42)
+	at com.sleepycat.je.log.FileDeletionDetector$FileDeleteDetectTask.run(FileDeletionDetector.java:166)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+

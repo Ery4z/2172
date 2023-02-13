@@ -1,0 +1,241 @@
+** TO DO **
+
+- Add WITH statement.
+
+- Allow KEY {...} to be optional, equivalent to KEY {ALL BUT}.
+
+- Ensure AVG returns NaN for no records everywhere it's used.
+
+- Fix Nattable display refresh issues on MacOS.
+
+- Fix SWT_AWT bridge problems using alternative display on Linux.
+
+- Case #228: Cut and pasting in the command window pastes 
+  multiple times; possibly related to how many times the cmd-c combo was pressed.
+
+- Case #220 - 227: Check that "Cancel" correctly resets vm.
+
+- Improve connection handling to reduce socket consumption in org.reldb.rel.client.Connection.
+
+- DBrowser: Closing a database tab should close its database.
+
+- Provide "prepared statement" or parameterised query mechanism in client
+  library, to promote code re-use and avoid "Tutorial D injection".
+
+- DBrowser: On recently-used database display, provide options to sort alphabetically
+  or by use frequency, and to display as tiles or a list.
+
+- Provide encrypted backups (and log-ins to a given database).
+
+- DBrowser: When using alternative display mode on Windows, the content scrollbars
+  disappear unless the main window is manually resized. Fix this.
+
+- DBrowser: Standard file dialog boxes missing titles on MacOS.
+
+- DBrowser: https://github.com/DaveVoorhis/Rel/issues/1
+  Navigation keys and undo appear to be consumed by Nattable without performing
+  appropriate actions. Fix.
+ 
+- Rel: Check that UNGROUP of an RVA with a single attribute works correctly.
+  (RELATION {RATE RELATION {RATE RATIONAL}} {
+	TUPLE {RATE RELATION {RATE RATIONAL} {
+		TUPLE {RATE 22.0}}}})
+  UNGROUP RATE
+  Fails?  Looks like RATE reference winds up being ambiguous. This works:
+  (RELATION {r RELATION {RATE RATIONAL}} {
+	TUPLE {r RELATION {RATE RATIONAL} {
+		TUPLE {RATE 22.0}}}})
+  UNGROUP r
+  
+- Rel: Provide CAST_AS_CHARACTER(OPERATOR) and CAST_AS_OPERATOR(CHARACTER).
+
+- Rel: Issue:
+    S WHERE (WITH (x := true): x) 
+  works but 
+    S WHERE WITH (x := true): x 
+  doesn't. Look at operator precedence around WHERE and WITH.
+  Note that this is non-trivial to resolve, because without the
+  parentheses, it is ambiguous because both WITH and WHERE
+  end with the same term. Thus, S WHERE WITH (x = 2 * y): x AND p 
+  could mean WHERE (WITH (x = 2 * y): x) AND p
+  or could mean WHERE (WITH (x = 2 * y): x AND p).
+
+- Allow overwrite of attributes in EXTEND.
+
+- "Standard library": A mechanism to load/include/use/import specific types, 
+  sets of operators, or other definitions (e.g., pre-built database schemas) 
+  in-language and by name, which then loads and executes them if they’re not 
+  already loaded and is a no-op if they are, with appropriate versioning, 
+  etc. — as opposed to simply explicitly running a script file — would be a 
+  nice way to provide a “standard library” that can be extended, upgraded, 
+  customised, or removed as needed.
+
+- Remove read-only UPDATE operator (as long as EXTEND can serve the same purpose.)
+
+- Fix EXACTLY.
+
+- Maybe associate "loading" screen with database loading, rather than Rel loading.
+
+- SUMMARIZE BY is too slow. Make it faster.
+
+- Fix: Altering a relvar will almost certainly cause dependent VIEWs to break.
+
+- Test Extensions directory to handle user-added JDBC drivers with stand-alone DBMS.
+
+- Improve update handling in TableCSV, TableXLS, and (particularly) TableJDBC.
+
+- Configure JDBC/XLS/CSV support as separate plug-in for both RelUI and stand-alone DBMS.
+
+- provide READ/READLN as counterparts to WRITE/WRITELN, to support writing interactive scripts, console filters,
+  CGI scripts, etc.
+
+- Add plenty of useful time/date parsers and conversions.
+
+- Implement user-defined physreps and user-defined THE_<x> operators. Treat
+  RM Pre 4's "shall not be visible" as having a reasonable definition, perhaps 
+  one involving as-yet-unimplemented security features.
+
+- Have values under S-by-C display declared type; use MST_OF(v) to obtain MST of v.
+
+- Implement LEAD, LAG, iTH etc. Maybe these return the whole tuple, rather than an attribute?  (If so, what
+  does 'null' look like?)
+
+- Replace VM with generation of native Java code, compiled with ecj.
+
+- Be able to specify user-defined parameters in Rev queries.
+
+- Be able to bring operator invocations into Rev queries.
+
+- Be able to invoke operators via Operator entries in tree of database objects.
+
+- Provide facility to associate predicate expressions (and/or general comments) with relvar definitions in the catalog.
+
+- Associate a 'project' attribute with every database object, to permit admin UIs that 
+  show only the relvars, views, types, operators, etc., in that project.
+
+- Provide a means to store code generation 'wizards' in the database and integrate with UI.
+
+- Provide a means to easily import/export from other databases. Being able to define external database contents as local
+  relvars will make this straightforward.
+
+- Associate a 'valid' attribute with every database object, to permit changes that invalidate dependent objects.
+
+- Provide THE_INTEGER(INTEGER)
+
+- Fix intermittent getKeyForTuple exception when creating new database.
+
+- Check that invocation of update operators (no RETURNS) supports multimethod invocation.
+
+- Improve UPDATE operator in Rev.
+
+- Implement (only for multiple possreps) SELECTORS and (mandatory) INIT clause in TYPE definitions.
+
+- Examine org.reldb.rel.client.  Should tuple iteration close the tuple iterator?
+
+- Test client connection reset() on remote databases.
+
+- Fix self-reference POSSREP (e.g., t = THE_t(supertype) ) bug.
+       I.e., prevent recursive definitions like 
+           TYPE blah IS {blat CONSTRAINT p POSSREP {x = THE_x(blat)}}
+
+  Another example:
+	   OPERATOR LENGTH(s CHAR) RETURNS INTEGER Java FOREIGN
+	    return ValueInteger.select(context.getGenerator(), s.stringValue().length());
+	   END OPERATOR;
+	   TYPE BDT_symbolic POSSREP { VALUE CHAR } ;
+	   TYPE identifier IS { BDT_symbolic CONSTRAINT LENGTH ( THE_VALUE ( BDT_symbolic ) ) <= 64 
+	   POSSREP { VALUE = THE_VALUE ( BDT_symbolic) } } ;
+	   VAR Base_data_type BASE RELATION { name identifier } KEY { name } ;
+  Rel goes into an infinite loop on the final definition.
+  Appears to be due to VALUE = THE_VALUE (...) which results in unresolved recursive reference.
+  
+- Enhancement:  Use the following TCLOSE:
+  // Based on submission by Vilem Vychodil, Palacky University in Olomouc (Czech Republic)
+	OPERATOR TCLOSE(r RELATION {x INT, y INT}) RETURNS SAME_TYPE_AS(r);
+		VAR result PRIVATE INIT(r) KEY {x, y};
+		VAR work PRIVATE INIT(r) KEY {x, y};
+		WHILE NOT IS_EMPTY(work);
+			work := ((r RENAME {y AS z}) COMPOSE (work RENAME {x AS z})) MINUS result;
+			INSERT result work;
+		END WHILE;
+		RETURN result;
+	END OPERATOR;
+
+- Provide \t\n\r translation in DBrowser, so that string literals like...
+          WRITELN("blah
+                blah
+                blah");
+        ...translate to WRITELN("blah\nblah\nblah");
+
+- Optimise TupleIteratorCount.
+
+- Complete anonymous operator support.
+
+- Allow operator names to be used as identifiers to obtain ValueOperator values.
+	Maybe... What does this do to polymorphism?
+	
+- Replace OPERATOR BOOLEAN(BOOLEAN) RETURNS BOOLEAN with
+        OPERATOR BOOLEAN(RELATION {}) RETURNS BOOLEAN, such that
+        we can have:
+           CONST TRUE INIT(BOOLEAN(TABLE_DEE));
+           CONST FALSE INIT(BOOLEAN(TABLE_DUM));
+      - on the other hand, what do we do with the other built-in types?
+
+- Fix bug reported by Hugh re OP_EQUALS() etc.
+
+- UNION {x, y} should work where x and y define attributes
+	        that have the same name and differing type but have a common supertype.
+	        
+- Alter inference of most specific common supertype, such that evaluating:
+  RELATION {
+    TUPLE {x 1, y 2.3, z 'two'},
+    TUPLE {x 2.3, y 1, z true}
+  }
+     ...returns...
+  RELATION {x ALPHA, y ALPHA, z ALPHA} {
+    TUPLE {x 1, y 2.3, z 'two'},
+    TUPLE {x 2.3, y 1, z true}
+  }
+
+- Rewrite areas where high-cardinality relations currently run out of RAM. 
+
+- INTERSECT {c CHARACTER} {} should either return maximal relation or throw exception or 
+  implement 'INTERSECT {h} {} WHERE boolexp' as "relation comprehension"
+  
+- Implement multiple inheritance.
+
+- Check constraints when used on Catalog, e.g., "CONSTRAINT blah COUNT(Catalog) = 6;".
+
+- Implement LEAVE statement.
+
+- Implement operator UPDATE parameters.
+
+- Implement partial evaluation and memoization.
+
+- Implement triggers.  Maybe.
+
+- Optimise constraints that implement semantics of SQL's "foreign key" constraints.
+
+- Quote strings on all generated error messages.
+  
+- Implement users, groups and authorisation
+
+- Implement named arguments and default parameters for operator invocation?
+
+- Test user-defined types with Array and Relation parameters and return values.
+
+- Build 'EVALUATE' -- like EXECUTE but returns a value.
+
+- Create a view to represent active connections, including statistics.
+
+- Create a view to represent system information, such as host name, current date, unique ID, etc.
+
+- Create a relvar to contain all log messages.
+
+- Create a "KILL" operator to kill a connection.
+
+- Replacing an Operator should immediately update any references to that Operator in the running code.
+  Implementing this may be deferred until everything (code, data, types) is stored in the catalog,
+  with appropriate triggers and foreign key constraints.
+  
+- Build JDBC and/or ODBC drivers.

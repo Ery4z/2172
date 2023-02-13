@@ -1,0 +1,8 @@
+2023-02-12 13:08:37.526 UTC INFO [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb/classes] Loaded missing expiration data from file 0x0
+2023-02-12 16:04:57.056 UTC SEVERE [/home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb/classes] /home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb/classes:FileDeletionDetector exited unexpectedly with exception java.io.IOException: Directory /home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb/classes does not exist now. Something abnormal may happen.java.io.IOException: Directory /home/snijssen/courses/databases/2023/databases/mondial_missions_update/binaries/rel/Reldb/classes does not exist now. Something abnormal may happen.
+	at com.sleepycat.je.log.FileDeletionDetector.processLogFileDeleteEvents(FileDeletionDetector.java:248)
+	at com.sleepycat.je.log.FileDeletionDetector.access$100(FileDeletionDetector.java:42)
+	at com.sleepycat.je.log.FileDeletionDetector$FileDeleteDetectTask.run(FileDeletionDetector.java:166)
+	at java.base/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base/java.util.TimerThread.run(Unknown Source)
+
