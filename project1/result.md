@@ -11,7 +11,7 @@ SELECT DISTINCT name FROM MOUNTAIN;
 Rel:
 
 ```rel
-
+Mountain {name}
 ```
 
 ---
@@ -21,13 +21,16 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT c.code
+FROM Country as c
+JOIN CountryCovid as cc on c.code=cc.country
+WHERE cc.total_cases>10000 AND cc.year=2021 AND cc.month=3;
 ```
 
 Rel:
 
 ```rel
-
+((Country JOIN (CountryCovid RENAME {country AS code})) WHERE year=2021 AND month=3 AND total_cases>10000) {code}
 ```
 
 ---
@@ -37,13 +40,15 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT P.name as province, C.name as country
+FROM Province AS P JOIN Country AS C
+WHERE P.country=C.code AND P.area<200
 ```
 
 Rel:
 
 ```rel
-
+((Province JOIN ((Country RENAME {code AS country, name AS cName}){country,cName})) WHERE area<200.) {name,cName} RENAME {name AS province, cName AS country}
 ```
 
 ---
@@ -53,29 +58,37 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT c.name as country, c.population as population, cc.total_deaths as total_deaths
+FROM Country as c
+JOIN CountryCovid as cc on c.code=cc.country
+JOIN Encompasses as e on e.country=c.code
+WHERE cc.total_deaths>10000 AND cc.year=2022 AND cc.month=12 AND e.continent="Europe";
 ```
 
 Rel:
 
 ```rel
-
+(((Country RENAME {code AS country}) JOIN CountryCovid JOIN Encompasses ) WHERE year=2022 AND month=12 AND total_deaths>10000 AND continent="Europe") {name,population,total_deaths} RENAME {name as country}
 ```
 
 ---
 
 ### 5. For each country that has declared independence, give its full name and its independence date.
 
+TODO: Check if this is correct, maybe not aggregate
+
 SQL:
 
 ```sql
-
+SELECT DISTINCT c.name, MAX(i.independence) as independence
+FROM Country as c RIGHT JOIN Independence as i
+GROUP BY c.name;
 ```
 
 Rel:
 
 ```rel
-
+ ((Country RENAME {code AS country}) JOIN (SUMMARIZE (Independence) BY {country} : {independence := MAX(independence)})) {name,independence}
 ```
 
 ---
@@ -85,13 +98,26 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT country1 as code,name
+FROM (
+    SELECT c.code, c.name, b.country1, b.country2
+    FROM Country as c
+    JOIN Borders as b ON c.code=b.country1
+    WHERE b.country2="TJ" OR b.country2="IND"
+) as sub
+WHERE country2="IND" AND country1
+IN (SELECT country1 FROM (
+    SELECT c.code, c.name, b.country1, b.country2
+    FROM Country as c
+    JOIN Borders as b ON c.code=b.country1
+    WHERE b.country2="TJ" OR b.country2="IND"
+) as sub2 WHERE country2="TJ")
 ```
 
 Rel:
 
 ```rel
-
+(((Country RENAME {code AS country1}) JOIN Borders) WHERE country2="TJ") {country1,name} INTERSECT (((Country RENAME {code AS country1}) JOIN Borders) WHERE country2="IND") {country1,name}
 ```
 
 ---
@@ -101,13 +127,18 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT c.capital as capital
+FROM Country as c
+JOIN Province as p ON p.country=c.code
+JOIN GeoMountain as g ON p.name=g.province
+JOIN Mountain as m ON g.mountain=m.name
+WHERE m.mountains="Alps" AND m.height>4000
 ```
 
 Rel:
 
 ```rel
-
+(((Mountain RENAME {name as mountain}) JOIN GeoMountain JOIN ((Province RENAME {name as province, country as code}) {province,code}) JOIN Country) WHERE height>4000. AND mountains="Alps") {capital}
 ```
 
 ---
@@ -117,13 +148,16 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT c.code, c.name
+FROM Country as c
+LEFT OUTER JOIN Language as l ON c.code=l.country
+WHERE l.name is NULL
 ```
 
 Rel:
 
 ```rel
-
+(Country {code,name}) MINUS ((Language RENAME {country as code}){code} JOIN (Country {code,name}))
 ```
 
 ---
