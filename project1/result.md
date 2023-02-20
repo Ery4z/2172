@@ -167,7 +167,14 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT mountains
+FROM (
+SELECT DISTINCT m.mountains as mountains, g.country as country
+FROM Mountain as m
+JOIN GeoMountain as g ON m.name=g.mountain
+)
+GROUP BY mountains
+HAVING COUNT(country)>1
 ```
 
 Rel:
@@ -183,7 +190,18 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT capital
+FROM(
+SELECT DISTINCT c.capital as capital
+FROM Country as c
+JOIN CountryCovid as cc on c.code=cc.country
+GROUP BY c.capital
+HAVING SUM(cc.total_deaths)>10000
+) as sub
+WHERE capital IN (
+SELECT name
+FROM Province
+)
 ```
 
 Rel:
@@ -199,7 +217,27 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT name
+FROM (
+    SELECT c.code, c.name, b.country1, b.country2
+    FROM Country as c
+    JOIN Borders as b ON c.code=b.country1
+    WHERE b.country2="USA"
+) as sub
+UNION
+SELECT DISTINCT name
+FROM (
+    SELECT b.country2,c.name
+    FROM (
+        SELECT c.code as usaBorder
+        FROM Country as c
+        JOIN Borders as b ON c.code=b.country1
+        WHERE b.country2="USA"
+        )
+    INNER JOIN Borders as b ON usaBorder=b.country1
+    INNER JOIN Country as c ON b.country2=c.code
+    WHERE c.code<>'USA'
+)
 ```
 
 Rel:
@@ -210,12 +248,16 @@ Rel:
 
 ---
 
-### 12. Count the number of different countries whose Covid information was collected. The resul must be a relation composed of 1-tuples with attribute {cnt}.
+### 12. Count the number of different countries whose Covid information was collected. The result must be a relation composed of 1-tuples with attribute {cnt}.
 
 SQL:
 
 ```sql
-
+SELECT COUNT(country) as cnt
+FROM(
+SELECT DISTINCT country
+FROM CountryCovid
+)
 ```
 
 Rel:
@@ -226,14 +268,23 @@ Rel:
 
 ---
 
-### 13. List the name of all countries which have zero Covid cases until 12/2021 (included) together with their neighboring countries. The result must be a relation composed of tuples of 2 attributes {country1, country2} where the country1 is the zero-Covid country and country2 is its neighboring country. If a country has no neighboring country, it should not be included in the
-
-    output.
+### 13. List the name of all countries which have zero Covid cases until 12/2021 (included) together with their neighboring countries. The result must be a relation composed of tuples of 2 attributes {country1, country2} where the country1 is the zero-Covid country and country2 is its neighboring country. If a country has no neighboring country, it should not be included in the output.
 
 SQL:
 
 ```sql
-
+SELECT DISTINCT name as country1,c.name as country2
+FROM (
+    SELECT code, name
+    FROM Country
+    WHERE code NOT IN
+    (SELECT DISTINCT country
+    FROM CountryCovid
+    WHERE total_cases>0 AND year<2022)
+) as sub
+LEFT JOIN Borders as b ON b.country1=sub.code
+LEFT JOIN Country as c ON b.country2=c.code
+WHERE c.name IS NOT NULL
 ```
 
 Rel:
@@ -249,7 +300,11 @@ Rel:
 SQL:
 
 ```sql
-
+SELECT DISTINCT a.country  as country, a.name as name
+FROM Language a
+LEFT OUTER JOIN Language b
+    ON a.country = b.country AND a.percentage < b.percentage
+WHERE b.country IS NULL;
 ```
 
 Rel:
