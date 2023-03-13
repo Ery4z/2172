@@ -1,0 +1,46 @@
+(Borders { country1, country2 }
+            JOIN(
+                EXTEND(
+                    (Country { code }
+                        RENAME { code as country }) MINUS(CountryCovid { country, year, month }
+                        WHERE month = 12 AND year = 2022) { country }
+                ): { covid_ratio: = 0. }
+                UNION(
+                    EXTEND(CountryCovid { country, year, month, total_cases }
+                        WHERE month = 12 AND year = 2022): { covid_ratio: = CAST_AS_RATIONAL(total_cases) / 100000. } { country, covid_ratio }
+                    RENAME { country as country1, covid_ratio as covid_ratio1 }
+                )) JOIN(
+
+                    EXTEND(
+                        (Country { code }
+                            RENAME { code as country }) MINUS(CountryCovid { country, year, month }
+                            WHERE month = 12 AND year = 2022) { country }): { covid_ratio: = 0. }
+                    UNION(
+                        EXTEND(CountryCovid { country, year, month, total_cases }
+                            WHERE month = 12 AND year = 2022): { covid_ratio: = CAST_AS_RATIONAL(total_cases) / 100000. } { country, covid_ratio }
+                    ) RENAME { country as country2, covid_ratio as covid_ratio2 }
+
+                )
+            ) WHERE covid_ratio1 > covid_ratio2) { country1 }
+        RENAME { country1 as country }) MINUS(Borders { country1, country2 }
+            JOIN(
+                EXTEND((Country { code }
+                    RENAME { code as country }) MINUS(CountryCovid { country, year, month }
+                    WHERE month = 12 AND year = 2022) { country }): { covid_ratio: = 0. }
+                UNION(
+                    EXTEND(CountryCovid { country, year, month, total_cases }
+                        WHERE month = 12 AND year = 2022): { covid_ratio: = CAST_AS_RATIONAL(total_cases) / 100000. } { country, covid_ratio }
+                ) RENAME { country as country1, covid_ratio as covid_ratio1 }
+            )) JOIN(
+                (
+                    EXTEND((Country { code }
+                        RENAME { code as country }) MINUS(CountryCovid { country, year, month }
+                        WHERE month = 12 AND year = 2022) { country }): { covid_ratio: = 0. }
+                    UNION(
+                        EXTEND(CountryCovid { country, year, month, total_cases }
+                            WHERE month = 12 AND year = 2022): { covid_ratio: = CAST_AS_RATIONAL(total_cases) / 100000. } { country, covid_ratio }
+                    ) RENAME { country as country2, covid_ratio as covid_ratio2 }
+                )
+            )
+        ) WHERE covid_ratio1 > covid_ratio2) { country2 }
+        RENAME { country2 as country })
