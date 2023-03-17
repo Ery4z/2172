@@ -17,6 +17,13 @@ The following document the general table structure and justification about the r
 | `height` | `int`          | NOT NULL    |
 
 ```sql
+CREATE TABLE VehicleClass (
+    vcid INT PRIMARY KEY,
+    vcname VARCHAR(255) NOT NULL UNIQUE,
+    length INT NOT NULL,
+    width INT NOT NULL,
+    height INT NOT NULL
+);
 
 ```
 
@@ -32,6 +39,17 @@ The following document the general table structure and justification about the r
 | `vcid`  | `int`          | FK NULLABLE                            |
 
 ```sql
+
+CREATE TABLE Customer (
+    cid INT PRIMARY KEY,
+    first VARCHAR(255) NOT NULL,
+    last VARCHAR(255) NOT NULL,
+    vcid INT NULL,
+    FOREIGN KEY (vcid) REFERENCES VehicleClass(vcid)
+    UNIQUE (first, last)
+);
+
+INSERT INTO Customer (cid, first, last) VALUES (1, 'John', 'Doe');
 
 ```
 
@@ -57,6 +75,19 @@ Tuple of this table are weak entities. If the tuple for `VehicleClass` reference
 
 ```sql
 
+CREATE TABLE Vehicle (
+    vid INT PRIMARY KEY,
+    num INT NOT NULL,
+    last_check_date DATE NOT NULL,
+    is_car BOOLEAN NOT NULL,
+    plate_num VARCHAR(255) NULL,
+    vcid INT NOT NULL,
+    sid INT NOT NULL,
+    FOREIGN KEY (vcid) REFERENCES VehicleClass(vcid),
+    FOREIGN KEY (sid) REFERENCES Station(sid),
+    UNIQUE (num, vcid)
+);
+
 ```
 
 ---
@@ -66,15 +97,24 @@ Tuple of this table are weak entities. If the tuple for `VehicleClass` reference
 In this table we added the attribute `sid` to be able to use a foreign key in the table `Vehicle` to refer to a station.
 The use of name should have been a possibility but it is if the name of a station is modified then the foreign key will not be valid anymore.
 
-| Column     | Type           | Description                               |
-| ---------- | -------------- | ----------------------------------------- |
-| `sid`      | `int`          | PK                                        |
-| `name`     | `varchar(255)` | AK                                        |
-| `street`   | `varchar(255)` | AK when associated with city & postcode   |
-| `city`     | `varchar(255)` | AK when associated with street & postcode |
-| `postcode` | `varchar(255)` | AK when associated with city & street     |
+| Column     | Type           | Description                                        |
+| ---------- | -------------- | -------------------------------------------------- |
+| `sid`      | `int`          | PK                                                 |
+| `name`     | `varchar(255)` | NOT NULL AK                                        |
+| `street`   | `varchar(255)` | NOT NULL AK when associated with city & postcode   |
+| `city`     | `varchar(255)` | NOT NULL AK when associated with street & postcode |
+| `postcode` | `varchar(255)` | NOT NULL AK when associated with city & street     |
 
 ```sql
+
+CREATE TABLE Station (
+    sid INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    street VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    postcode VARCHAR(255) NOT NULL,
+    UNIQUE (street, city, postcode)
+);
 
 ```
 
@@ -96,6 +136,17 @@ The tuple of this table are weak entities. If the tuple for `Vehicle` referenced
 
 ```sql
 
+CREATE TABLE Reservation (
+    rid INT PRIMARY KEY,
+    cid INT NOT NULL,
+    startDateTime DATETIME NOT NULL,
+    endDateTime DATETIME NOT NULL,
+    vid INT NOT NULL,
+    FOREIGN KEY (cid) REFERENCES Customer(cid),
+    FOREIGN KEY (vid) REFERENCES Vehicle(vid)
+);
+
+
 ```
 
 ---
@@ -104,11 +155,18 @@ The tuple of this table are weak entities. If the tuple for `Vehicle` referenced
 
 | Column     | Type  | Description |
 | ---------- | ----- | ----------- |
-| `rid`      | `int` | PK          |
+| `rid`      | `int` | PK FK       |
 | `distance` | `int` | NOT NULL    |
 | `cost`     | `int` | NOT NULL    |
 
 ```sql
+
+CREATE TABLE FinishedReservation (
+    rid INT PRIMARY KEY ,
+    distance INT NOT NULL,
+    cost INT NOT NULL,
+    FOREIGN KEY (rid) REFERENCES Reservation(rid)
+);
 
 ```
 
