@@ -83,8 +83,8 @@ CREATE TABLE Vehicle (
     plate_num VARCHAR(255) NULL,
     vcid INT NOT NULL,
     sid INT NOT NULL,
-    FOREIGN KEY (vcid) REFERENCES VehicleClass(vcid),
-    FOREIGN KEY (sid) REFERENCES Station(sid),
+    FOREIGN KEY (vcid) REFERENCES VehicleClass(vcid) ON DELETE CASCADE,
+    FOREIGN KEY (sid) REFERENCES Station(sid) ON DELETE CASCADE,
     UNIQUE (num, vcid)
 );
 
@@ -142,8 +142,8 @@ CREATE TABLE Reservation (
     startDateTime DATETIME NOT NULL,
     endDateTime DATETIME NOT NULL,
     vid INT NOT NULL,
-    FOREIGN KEY (cid) REFERENCES Customer(cid),
-    FOREIGN KEY (vid) REFERENCES Vehicle(vid)
+    FOREIGN KEY (cid) REFERENCES Customer(cid) ON DELETE CASCADE,
+    FOREIGN KEY (vid) REFERENCES Vehicle(vid) ON DELETE CASCADE
 );
 
 
@@ -165,7 +165,7 @@ CREATE TABLE FinishedReservation (
     rid INT PRIMARY KEY ,
     distance INT NOT NULL,
     cost INT NOT NULL,
-    FOREIGN KEY (rid) REFERENCES Reservation(rid)
+    FOREIGN KEY (rid) REFERENCES Reservation(rid) ON DELETE CASCADE
 );
 
 ```
