@@ -2,8 +2,8 @@
 sure to include every country in your output only once.
 
 ```neo4j
-MATCH (c:Country { name: 'Greece' })-[:Borders]->(borderingCountry:Country), (cn:Continent {name: 'Europe'})-[e:Encompasses]->(borderingCountry)
-WHERE e.percentage<>"100.0"
+MATCH (c:Country { name: 'Greece' })-[:Borders]->(borderingCountry:Country)<-[e:Encompasses]-(cn:Continent {name: 'Europe'})
+WHERE e.percentage<>"100.0" AND e.percentage<>"0.0"
 RETURN DISTINCT borderingCountry.name;
 ```
 
@@ -23,8 +23,9 @@ country not located, or not entirely located, in Europe.
 ```neo4j
 
 MATCH (c:Country)-[:Borders]->(borderingCountry:Country), 
-      (c)<-[e:Encompasses {percentage: "100.0"}]-(:Continent {name: 'Europe'}),
-      (borderingCountry)<-[e2:Encompasses]-(:Continent {name: 'Europe'})
+      (c)<-[e:Encompasses {percentage: "100.0"}]-(:Continent {name: 'Europe'})
+OPTIONAL MATCH (borderingCountry)<-[e2:Encompasses]-(:Continent {name: 'Europe'})
+with c,borderingCountry,e2 
 WHERE e2.percentage <> "100.0"
 RETURN DISTINCT c.name;
 ```
